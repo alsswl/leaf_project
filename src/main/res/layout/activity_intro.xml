@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_ivory"
+    android:gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    tools:context=".intro">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/font_light"
+        android:gravity="center"
+        android:text="이팝이 일기장"
+        android:textColor="@color/black"
+        android:textSize="75sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="386dp"
+        android:layout_height="508dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="50dp"
+        android:paddingTop="10dp"
+        app:srcCompat="@drawable/leaf_happy" />
+</LinearLayout>

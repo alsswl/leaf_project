@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_ivory"
+    tools:context=".Fragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/pen_pencil_write_icon"
+        app:backgroundTint="@color/main_green"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:maxImageSize="35dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:dropDownHeight="300dp"
+                android:dropDownSelector="@color/main_green"
+                android:popupBackground="@color/main_green"
+                android:scrollbarThumbHorizontal="@color/main_green"
+                android:scrollbarThumbVertical="@color/main_green"
+                tools:ignore="TouchTargetSizeCheck"
+
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="@font/font_light"
+                android:text="년"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/black"
+                android:dropDownHeight="300dp"
+                android:dropDownSelector="@color/main_green"
+                android:popupBackground="@color/main_green"
+                android:scrollbarThumbHorizontal="@color/main_green"
+                android:scrollbarThumbVertical="@color/main_green"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:layout_weight="0"
+                android:fontFamily="@font/font_light"
+                android:text="월"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@color/main_green"
+                android:fontFamily="@font/font_light"
+                android:text="확인"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
